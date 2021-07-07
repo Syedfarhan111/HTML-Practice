@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+function theme1() {
+            document.getElementById("s1").style.color = "red"
+            document.getElementById("s2").style.color = "blue"
+        }
+        function theme2() {
+            document.getElementById("s1").style.color = "blue"
+            document.getElementById("s2").style.color = "yellow"
+        }
+        function theme3() {
+            document.getElementById("s1").style.color = "black"
+            document.getElementById("s2").style.color = "green"
+        }
+
+        
+</script>
+<body>
+    <h1><span style="color:red ;" id="s1">Pickup</span><span style="color: blue;" id="s2">Biz</span></h1>
+    <button onclick="theme1()">Theme 1</button>
+    <button onclick="theme2()">Theme 2</button>
+    <button onclick="theme3()">Theme 3</button>
+    
+</body>
+</html>

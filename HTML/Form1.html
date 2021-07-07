@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Fullname(){
+            var fname=document.getElementById("f");
+            var mname=document.getElementById("m");
+            var lname=document.getElementById("l");
+            var fullname=document.getElementById("fullName");
+            fullname.value=fname.value+" "+mname.value+" "+lname.value;
+    
+          
+        }
+        function clearme(){
+                var clarfullName=document.getElementById("fullName");
+                clarfullName.value=" ";
+            }
+
+            function resetall(){
+                var reset=document.getElementById("f");
+                var reset1=document.getElementById("m");
+                var reset2=document.getElementById("l");
+                var reset3=document.getElementById("fullName");
+                reset.value=" ";
+                reset1.value=" ";
+                reset2.value=" ";
+                reset3.value=" ";
+            }
+    </script>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <br><br><hr><hr>
+
+    <label >firstname  :</label>
+    <input type="text" id="f"><br>
+ 
+    <label >secondname  :</label>
+    <input type="text" id="m"> <br>
+
+    <label >lastname  :</label>
+    <input type="text"id ="l"><br>
+
+    <label>fullName   :</label>
+    <input type="text" id="fullName"><br>
+     <button onclick="Fullname()">click here</button>
+     <button onclick="clearme()">clear</button>
+     <button onclick="resetall()">reset</button>
+     <br><br><hr><hr>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i=1;
+
+        var player = 1;
+
+        function tichare(id) {
+            var objtic = document.getElementById(id);
+            var objplayer = document.getElementById("player");.....................................................................................
+           
+            if (player == 1) {
+                objtic.style = "color:brown;font-size:30px";
+                objplayer.style = "color:brown;font:size: 30px;";
+                objtic.innerHTML = "ME";
+                player = 2;
+            } else {
+                objtic.style = "color:green;font-size:30px";
+                objplayer.style = "color:green;font-size: 30px;";
+                objtic.innerHTML = "HE";
+                player = 1;
+            }
+            objplayer.innerHTML = "player " + player;
+
+   }
+    
+    </script>
+</head>
+
+<body>
+    <h1><span id ="player" style="color: red;font-size: 30px;">player 1</span></h1>
+    <table border="2">
+        <tr>
+            <td><span id="11" onclick="tichare('11')" style="color:gray; font-size: 30px;">OO</span></td>
+            <td><span id="12" onclick="tichare('12')" style="color:gray; font-size: 30px;">OO</span></td>
+            <td><span id="13" onclick="tichare('13')" style="color:gray; font-size: 30px;">OO</span></td>
+
+        </tr>
+        <tr>
+            <td><span id="21" onclick="tichare('21')" style="color:gray; font-size: 30px;">OO</span></td>
+            <td><span id="22" onclick="tichare('22')" style="color:gray; font-size: 30px;">OO</span></td>
+            <td><span id="23" onclick="tichare('23')" style="color:gray; font-size: 30px;">OO</span></td>
+
+        </tr>
+        <tr>
+            <td><span id="31" onclick="tichare('31')" style="color:gray; font-size: 30px;">OO</span></td>
+            <td><span id="32" onclick="tichare('32')" style="color:gray; font-size: 30px;">OO</span></td>
+            <td><span id="33" onclick="tichare('33')" style="color:gray; font-size: 30px;">OO</span></td>
+
+        </tr>
+
+    </table>
+    <button onclick="reset()">reset</button>
+
+</body>
+
+</html>
