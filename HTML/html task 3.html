@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        <style>
+      body {background-color:darkblue;
+      width: 400px;
+      padding: 100px;
+      margin: 10px;}
+      h1   {color: burlywood;}
+      label    {color: burlywood;}
+      button    {color: dodgerblue;}
+    </style>
+        function Clearform() {
+            var clr = document.getElementById("N").remove;
+            var clr = document.getElementById("p").remove;
+            var clr = document.getElementById("CP").remove;
+            var clr = document.getElementById("M").remove;
+            var clr = document.getElementById("F").remove;
+            var clr = document.getElementById("O").remove;
+            var clr = document.getElementById("C1").remove;
+            var clr = document.getElementById("C2").remove;
+            var clr = document.getElementById("C3").remove;
+            var clr = document.getElementById("C4").remove;
+            var clr = document.getElementById("Date").remove;
+
+        }
+    </script>
+         <style>
+            body {background-color:rgb(107, 253, 222);
+            width: 400px;
+            padding: 100px;
+            margin: 40px;
+            margin: 10px;}
+            h1   {color: rgb(28, 60, 168);}
+            label    {color: rgb(5, 3, 1);}
+            button    {color:lightcoral(226, 215, 255);}
+          </style>
+        
+</head>
+
+<body>
+    <h1>Personal Details</h1>
+    <hr>
+    <form >
+    <label>Name</label><br>
+    <input type="text" id="n" placeholder="Enter User Name"><br>
+    <label>Password</label><br>
+    <input type="password" placeholder="Enter Password" onclick="pass1()" id="p"><br>
+    <label>Confirm Password</label><br>
+    <input type="password" placeholder="Confirm Password" onclick="pass2()" id="cp">
+    <br><br>
+    <label>Gender :</label>
+    <input type="radio" id="m">Male
+    <input type="radio" id="f">Female
+    <input type="radio" ID="o">Other
+    <br><br>
+
+    <label>Hobbies :</label><br>
+    <input type="checkbox" id="c1" name="Tecnical Works"> Tecnical Works
+    <input type="checkbox" id="c2"> Coding
+    <input type="checkbox" id="c3"> Internet Surfing
+    <input type="checkbox" id="c4"> Travelling <br><br>
+
+    <label>Date OF berth</label>
+    <input type="date" id="date" placeholder="DD/MM/YYYY"><br><br>
+
+    <button onclick="Submit()"><b> Submit</b></button>
+    
+    <button onclick="Clear()"><b> clear</b></button>
+
+
+
+    </form>
+</body>
+
+</html>
