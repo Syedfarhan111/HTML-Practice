@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            padding: 10px;
+            color: white;
+        }
+
+        input {
+            float: right;
+        }
+
+         img {
+            height: 200px;
+            width: 300px;
+            margin-left: 550px;
+        }
+
+        h3 {
+            background-color: rgb(255, 178, 107);
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        .topnav {
+            background-color: rgba(126, 126, 126, 0.753);
+            overflow: hidden;
+            padding: 13px;
+        }
+    
+}
+        .img1{
+            height: 40px;
+            width: 60px;
+            float: left;
+        }
+        aside{
+            border-radius: 30px;
+            background-color: rgba(126, 126, 126, 0.753);
+            width: 300px;
+            text-align: start;
+        }
+        .body{
+           background-image: image-set("wallpsper.jpg");
+        }
+    </style>
+    <script>
+        function setStoreValues() {
+            document.getElementById("body").style = `background-color: ${localStorage.getItem("favColor")}`;
+            var userObj = document.getElementById("user");
+            userObj.value = localStorage.getItem("userName");
+        }
+    </script>
+</head>
+
+<body class="body">     <h3><b><u>Consulting And Constructing</u> </b></h3>
+    <h1></h1>
+    <div class="topnav">
+        <a class="fa fa-home" href="">Home</a>
+        <a href=>Services</a>
+        <a href="">Services</a>
+        <a href="">3D Elevations</a>
+        <a href="#about">About us</a>
+        <a href="#about">Contact</a>
+     
+        <input type="text" placeholder="Search..">
+
+        <a style="float: right;" href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+        
+    <img class="img2" src="../HTML/New folder/AI Enginearing logo.jpg" alt=""><hr>
+      <img src" alt="">
+
+</body>
+<script>
+    setStoreValues()
+</script>
+
+</html>

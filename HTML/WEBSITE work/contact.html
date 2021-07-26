@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../WEBSITE work/contact.css">
+    <link rel="stylesheet" href="../cssfonts/css/all.min.css">
+    <title>AI-ENGINEARS</title>
+</head>
+
+<script>
+    function setStorageData(){
+        sessionStorage.setItem("user_name",document.getElementById("user").value);
+        sessionStorage.setItem("email",document.getElementById("email").value);
+        sessionStorage.setItem("password",document.getElementById("password").value);
+        sessionStorage.setItem("favcolor",document.getElementById("colorPicker").value);
+    }
+    function getStorageData(){
+        document.getElementById("user").value=sessionStorage.getItem("user_name");
+        document.getElementById("email").value=sessionStorage.getItem("email");
+    document.getElementById("password").value=sessionStorage.getItem("password");
+    document.getElementById("colorPicker").style=`background-color:${sessionStorage.getItem("favcolor")}`;
+    document.getElementById("body").style= `background-color: ${sessionStorage.getItem("favcolor")}`;
+    }
+</script>
+
+<body id="body">
+  
+    <div>
+        <nav>
+            <a href=""><i class="fas fa-home"></i>Home</a>
+            <a href="../lab sesions/Ass web/Service.html"><i class="fab fa-servicestack"></i>Service</a>
+            <a href=""><i class="fab fa-product-hunt"></i>Product</a>
+            <a href=""><i class="fas fa-info-circle"></i>AboutUs</a>
+            <a href=""><i class="far fa-address-card"></i>Contact us</a>
+        </nav>
+    </div>
+    <h3><b><u>Consulting And Constructing</u> </b></h3>
+   
+    <fieldset>
+        <legend>Customer Details</legend>
+        <form><h2>Feel the Information</h2><br>
+        <label id="user" for="" >User Name :</label>
+        <input type="text" placeholder="Enter User Name"><br><br>
+        <label id="email" for="" >Email Id :</label>
+        <input type="email" placeholder="Enter Email Id"><br><br>
+        <label id="password" for="" >Password :</label>
+        <input type="password" placeholder="Enter Your Password"><br><br>
+        <label for="">Gender:</label>
+        <label for="">male</label>
+        <input type="radio">
+        <label for="">Female</label>
+        <input type="radio"><br><br>
+        <label for="">Date of Berth</label>
+        <input type="date"><br><br>
+        <label id="colorPic" for="">select favroite color</label>
+        <input type="color" name="" id="colorPicker" onclick=""><br><br>
+        <button onclick="setStorageData()"><b> Submit</b></button>
+        <button type="reset" onclick="Clearme()"><b> clear</b></button>
+
+        </form>
+    </fieldset>
+    <footer>
+        <h3>Contact us:</h3>
+        <p><i class="fas fa-mobile-alt"></i>mob:87856868 </p>
+        <a href=""><i class="far fa-envelope"></i> Gmail </a><br>
+        <a href=""><i class="fab fa-facebook-square"></i> Facebook</a><br>
+        <a href=""><i class="fab fa-instagram-square"></i> Instagram</a><br>
+
+
+    </footer>
+
+</body>
+<script>
+    getStorageData();
+</script>
+
+</html>

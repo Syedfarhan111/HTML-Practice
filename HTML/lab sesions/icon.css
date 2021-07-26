@@ -1,0 +1,44 @@
+nav{
+    background-color: cornflowerblue;
+    padding: 30px;
+    height: 60px;
+   /* text-align: center;  */
+    
+
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    vertical-align: middle;
+    float: left;
+    margin-left: 300px;
+    padding: 10;
+}
+a{
+    text-decoration: none;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    padding: 30px;
+    font-size: 21px;
+    vertical-align: middle;
+    padding-top: 30px;
+    
+
+   
+}
+i{
+    padding: 5px;
+}
+table{
+    height: 300px;
+    width: 200px;
+    text-align: center;
+   
+}
+th{
+    background-color: darksalmon;
+    text-align: center;
+}
+tr{
+    background-color: ;
+    
+}

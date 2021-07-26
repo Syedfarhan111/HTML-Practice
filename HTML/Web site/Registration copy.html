@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+
+        function setstoragevalue() {
+            var userdata = document.getElementById("name");
+            var passworddata = document.getElementById("password");
+
+            sessionStorage.setItem("userdata", userdata.value);
+            sessionStorage.setItem("password", passworddata.value);
+
+        }
+
+        function getstoragevalue() {
+            var userdata = document.getElementById("name");
+            var passworddata = document.getElementById("password");
+
+            userdata.value = sessionStorage.setItem("userdata");
+            passworddata.value = sessionStorage.setItem("password");
+````
+        }
+
+    </script>
+    
+
+
+</head>
+<style>
+    form {
+        background-color: rgb(107, 253, 222);
+        width: 400px;
+        padding: 100px;
+        margin: 40px;
+        margin: 10px;
+    }
+
+    h1 {
+        color: rgb(28, 60, 168);
+    }
+
+    label {
+        color: rgb(5, 3, 1);
+    }
+
+    button {
+        color: lightcoral(226, 215, 255);
+    }
+
+    a {
+        padding: 20px;
+        color: black;
+    }
+
+    nav {
+        background-color: coral;
+        padding: 20px;
+    }
+
+    input {
+        float: right;
+    }
+</style>
+<style>
+    body {
+        bagroundcolor: darkblue;
+        width: 400 px;
+        padding: 100 px;
+        margin: 10 px;
+    }
+h1 {
+    color: burlywood;
+}
+label {
+    color: burlywood;
+}
+button {
+    color: dodgerblue;
+}
+ </style>
+
+<body>
+    <nav>
+        <a href="./Lab js 3.html">Reistration</a>
+        <a href="./product.html">product</a>
+        <a href="./HOME.html">Home</a>
+        <a href="./About Us.html">About Us</a>
+        <a href="./Contact Us.html">Contact Us</a>
+        <input type="text">
+    </nav>
+
+    <h1>Personal Details</h1>
+    <hr>
+    <form>
+        <label>Name</label><br>
+        <input type="text" id="name" placeholder="Enter User Name"><br>
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter Password" onclick="pass1()" id="password"><br>
+        <label>Confirm Password</label><br>
+        <input type="password" placeholder="Confirm Password" onclick="pass2()" id="cp">
+        <br><br>
+       <label for="">favraite color</label>
+       <input type="text" name="" id="">
+        <button onclick="setstoragevalue()"><b> Submit</b></button>
+
+        <button  type="reset" onclick="Clear()"><b> clear</b></button>
+
+        <div  >
+            <h1 ><u> services </u></h1>
+            <marquee behavior="alternate" direction="" style="size: 300;"> 
+            <div style="display: inline-block; background-color: aqua;" ><figure><img src="./src/pngegg (2).png" alt="" width="300px" height="300px"><figcaption>first</figcaption> </figure></div>
+            <div style="display: inline-block; background-color: white; opacity: 0.7;"><figure><img src="./src/pngegg (3).png" alt="" width="300px" height="300px" > <figcaption>Second</figcaption></figure></div>
+            <div style="display: inline-block; background-color: black; opacity: 0.7;"><figure><img src="../Ass web/src/constside2.jpg" alt="" width="300px" height="300px"> <figcaption>Third</figcaption></figure></div>
+             </marquee>
+        </div>
+
+    </form>
+</body>
+<script>
+   getstoragevalue ();
+</script>
+
+</html>

@@ -1,0 +1,23 @@
+table{
+    width: 700px;
+    padding: 20px;
+}
+th{
+    background-color: rgb(228, 187, 195);
+    padding: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+td{
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+tr:nth-child(even){
+    background-color: rgb(56, 78, 173);
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: cornflowerblue;
+    color: darkgoldenrod;
+}

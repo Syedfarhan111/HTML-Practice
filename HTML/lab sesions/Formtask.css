@@ -1,0 +1,42 @@
+body{
+    background-image:url(./src/wallaper2.jpg);
+    background-size: cover;
+}
+img{
+    height:150px ;
+    width: 150px;
+    margin: -90px;
+    padding-bottom: 100px;
+}
+.form{
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 10 rgb(136,8,8);
+    border: groove;
+    text-align: center;
+    margin: 150px auto;
+    border: groove blue;
+    box-shadow: 0 0 10px black;
+}
+input{
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 200px;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+
+}
+button{
+    box-shadow: 0 0 10px black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}

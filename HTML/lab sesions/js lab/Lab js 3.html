@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fun1(){
+        var d1 = document.getElementById("Picup");
+        var d2 = document.getElementById("Biz");
+        d1=d1;  
+        d2 =d2;
+    }
+    function fun2(){
+        var f1=document.getElementById("Picup");
+        var f2=document.getElementById("Biz");
+        f1.style="color:blue";
+        f2.style="color:yellow";
+
+    }
+    function fun3(){
+        var f3=document.getElementById("Picup");
+        var f4=document.getElementById("Biz");
+        f3.style="color:orange";
+        f4.style="color:red";
+    }
+    function fun4(){
+        var f11=document.getElementById("Picup");
+        var f22=document.getElementById("Biz");
+        f11.style="color:blue";
+        f22.style="color:red";
+    }
+</script>
+<body>
+    <h1><span id="Picup"> Pickup</span ><span id="Biz" >Biz</span></h1><br><br>
+    <button onclick="fun1()">default1</button>
+    <button onclick="fun2()">Theme1</button>
+    <button onclick="fun3()">Theme2</button>
+    <button onclick="fun4()">Theme3</button>
+
+    
+</body>
+</html>

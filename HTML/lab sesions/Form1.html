@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Fullname(){
+            var fname=document.getElementById("firstname");
+            var mname=document.getElementById("middlename");
+            var lname=document.getElementById("lastname");
+            var fullname=document.getElementById("fullName");
+            fullname.value=fname.value+" "+mname.value+" "+lname.value;
+        }
+            function Clear() {
+                
+            }
+    </script>
+</head>
+
+<body>
+    <h1>Employee Details</h1>
+    <br><br><hr><hr>
+
+    <label >firstname  :</label>
+    <input type="text" id="firstname"><br>
+ 
+    <label >secondname  :</label>
+    <input type="text" id="middlename"> <br>
+
+    <label >lastname  :</label>
+    <input type="text"id ="lastname"><br>
+
+    <label>fullName   :</label>
+    <input type="text" id="fullName"><br>
+     <button onclick="Fullname()">Click here</button>
+     <button  type="reset" onclick="Clear()" ><b>resetform</b></button>
+     <br><br><hr><hr>
+    
+</body>
+</html>

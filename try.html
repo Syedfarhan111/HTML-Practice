@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+
+       -function setstoragevalue() {
+            var userdata = document.getElementById("name");
+            var passworddata = document.getElementById("password");
+
+            sessionStorage.setItem("userdata", userdata.value);
+            sessionStorage.setItem("password", passworddata.value);
+
+        }
+
+        function getstoragevalue() {
+            var userdata = document.getElementById("name");
+            var passworddata = document.getElementById("password");
+
+            userdata.value = sessionStorage.setItem("userdata");
+            passworddata.value = sessionStorage.setItem("password");
+        }
+
+        function setstoraevalue() {
+            document.
+            
+        }
+    </script>
+
+</head>
+<style>
+    form {
+        background-color: rgb(107, 253, 222);
+        width: 400px;
+        padding: 100px;
+        margin: 40px;
+        margin: 10px;
+    }
+
+    h1 {
+        color: rgb(28, 60, 168);
+    }
+
+    label {
+        color: rgb(5, 3, 1);
+    }
+
+    button {
+        color: lightcoral(226, 215, 255);
+    }
+
+    a {
+        padding: 20px;
+        color: black;
+    }
+
+    nav {
+        background-color: coral;
+        padding: 20px;
+    }
+
+    input {
+        float: right;
+    }
+</style>
+<style>
+    body {
+        background - color: darkblue;
+        width: 400 px;
+        padding: 100 px;
+        margin: 10 px;
+    }
+h1 {
+    color: burlywood;
+}
+label {
+    color: burlywood;
+}
+button {
+    color: dodgerblue;
+}
+ </style>
+
+<body>
+
+    <h1>Personal Details</h1>
+    <hr>
+    <form>
+        <label>Name</label><br>
+        <input type="text" id="name" placeholder="Enter User Name"><br>
+        <label>Password</label><br>
+        <input type="password" id="password" placeholder="Enter Password" onclick="pass1()"><br>
+        <label>Confirm Password</label><br>
+        <input type="password" placeholder="Confirm Password" onclick="pass2()" id="cp">
+        <br><br>
+     
+        <button onclick="setstoragevalue()"><b> Submit</b></button>
+
+        <button ><b> clear</b></button>
+
+
+
+    </form>
+</body>
+<script>
+   getstoragevalue ();
+</script>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setStorageValues(){
+            sessionStorage.setItem("userName",document.getElementById("name").value);
+            sessionStorage.setItem("userPassword",document.getElementById("password").value);
+            sessionStorage.setItem("favColor",document.getElementById("colorPicker").value);
+            
+        }
+        function getStorageValue() {
+            document.getElementById("name").value=sessionStorage.getItem("userName");
+            document.getElementById("password").value=sessionStorage.getItem("userPassword");
+            document.getElementById("cnfpassword").value=sessionStorage.getItem("userPassword");
+            document.getElementById("formstyle").style= `background-color: ${sessionStorage.getItem("favColor")}`;
+            document.getElementById("body").style=`background-color: ${sessionStorage.getItem("favColor")}`;
+        }
+
+    </script>
+
+
+</head>
+<style>
+    form {
+        background-color: rgb(107, 253, 222);
+        width: 400px;
+        padding: 20px;
+        margin: 40px;
+        margin: auto
+        border-radius: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        border:double 3px black;
+        
+    }
+
+    label {
+        margin: 50px;
+    }
+
+    button {
+        color: lightcoral(226, 215, 255);
+    }
+
+    a {
+        padding: 20px;
+        color: black;
+    }
+
+    nav {
+        background-color: coral;
+        padding: 20px;
+    }
+
+    input {
+        float: right;
+    }
+    footer{
+        background-color: darkslategrey;
+       /* text-align: center; */
+       margin: 5px;
+    }
+</style>
+<body id="body">
+    <nav>
+        <a href="./Registration.html">Reistration</a>
+        <a href="./product.html">product</a>
+        <a href="./HOME.html">Home</a>
+        <a href="./About Us.html">About Us</a>
+        <a href="./Contact Us.html">Contact Us</a>
+        <input type="text">
+    </nav>
+
+    <h1>Personal Details</h1>
+    <hr>
+    <form id="formstyle" > 
+        <label>user name </label><br>
+        <input type="text" id="name" placeholder="Enter User Name"><br>
+
+        <label>Password</label><br>
+        <input type="password"id="password" placeholder="Enter Password" onclick="pass1()" ><br>
+
+        <label>Confirm Password</label><br>
+        <input type="password" placeholder="Confirm Password" onclick="pass2()" id="cnfpassword"><br><br>
+
+        <label for="">select favroite color</label>
+        <input type="color" name="" id="colorPicker" onclick="pass3()">
+        <br> <br>
+
+       
+
+        <button onclick="setStorageValues()"><b> Submit</b></button>
+
+        <button  type="reset" onclick="Clear()" ><b> clear</b></button>
+
+    </form>
+    
+</body>
+<footer>
+    <footer>
+        <b><h2>AI-Enginears</h2></b>
+        <b>Address:</b>
+        <b>Contact us: </b>
+        <mob class="8007856868"></mob>
+        <address>Lane no 7,PeerburhanNager,<br>
+            Nanded-431605.</address>
+        
+    </footer>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.3535163834795!2d77.3091503148529!3d19.179755787028526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d7446ed1ca83%3A0xf7aaaf09a7aadfe9!2sPickupBiz%20Learning%20Development%20Center!5e0!3m2!1sen!2sin!4v1625812886356!5m2!1sen!2sin"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</footer>
+<script>
+    getStorageValue()
+ </script>
+
+
+</html>

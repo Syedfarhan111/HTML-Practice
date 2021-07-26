@@ -1,0 +1,55 @@
+nav{
+    background-color: lightskyblue;
+    padding: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+a:hover{
+    box-shadow: 0 0 10px black ;
+}
+
+/* ********************divstart*/
+.dropdown_1 a{
+    display: block;
+}
+.dropdown_1{
+    display: inline-block;
+}
+
+.dropdown_list{
+    position: absolute;
+    padding: 5px;
+    width: 200px;
+    display: none;
+}
+.dropdown_1:hover .dropdown_list{
+display: block;
+text-align: center;
+background-color: wheat;
+/* border-radius: 20px; */
+/* **************************************************** */
+}
+.abotdiv1 a{
+    display: inline-block;
+} 
+.abotdiv1{
+    display: block;
+}
+.about_list{
+    position: absolute;
+    padding: 5px;
+    width: 200px;
+    display: none;                                                                                                                                                                                                                                        ;
+}
+.abotdiv1:hover .about_list{
+    display: block;
+    text-align: center;
+    background-color: wheat;
+
+}
+
+
